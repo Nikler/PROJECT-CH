@@ -9,7 +9,7 @@
 	display: inline;
 	line-height: 65px;
 	@include header-nav;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 
 	& i {
@@ -22,7 +22,7 @@
 	display: inline;
 	line-height: 65px;
 	@include header-nav;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 	color: $green;
 }
