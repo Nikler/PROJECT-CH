@@ -1,0 +1,28 @@
+.header-bottom {
+	min-height: 65px;
+	background: rgba(0,0,0,.2);
+	@include clearfix;
+}
+
+.header-bottom__location {
+	float: left;
+	display: inline;
+	line-height: 65px;
+	@include header-nav;
+	font-size: 14px;
+	font-weight: 500;
+
+	& i {
+		color: $green;
+	}
+}
+
+.header-bottom__dont {
+	float: right;
+	display: inline;
+	line-height: 65px;
+	@include header-nav;
+	font-size: 14px;
+	font-weight: 500;
+	color: $green;
+}

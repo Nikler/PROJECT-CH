@@ -1,0 +1,63 @@
+.serv-list {
+	@include clearfix;
+	font-family: 'Ubuntu', sans-serif;
+	margin-top: 55px;
+}
+
+.serv-list__item--1 {
+	display: block;
+	height: 375px;
+	width: 753px;
+	background: url('../img/landing-page__bg.jpg') no-repeat;
+	background-size: cover;
+	float: left;
+
+	& .serv-list__item-wrap {
+		font-size: 50px;
+		margin-left: 20px;
+
+		& i {
+			font-size: 22px;
+		}
+	}
+}
+
+.serv-list__item--2 {
+	display: block;
+	height: 187px;
+	width: 406px;
+	background: url('../img/info-site__bg.jpg') no-repeat;
+	background-size: cover;
+	float: right;
+	clear: right;
+	
+	& .serv-list__item-wrap {
+		text-align: right;
+		line-height: 22px;
+		font-size: 26px;
+		font-family: 'Roboto', sans-serif;
+		margin: 38px 28px 0 0;
+
+		& i {
+			font-size: 16px;
+			color: #c0c1c2;
+		}
+	}
+}
+
+.serv-list__item--3 {
+	display: block;
+	height: 178px;
+	width: 406px;
+	background: url('../img/visitka__bg.jpg') no-repeat;
+	background-size: cover;
+	float: right;
+	margin-top: (375px - (187px + 178px));
+
+	& .serv-list__item-wrap {
+		text-align: right;
+		font-size: 26px;
+		font-family: 'Roboto', sans-serif;
+		margin: 120px 28px 0 0;
+	}
+}

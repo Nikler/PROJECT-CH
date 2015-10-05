@@ -26,7 +26,7 @@ gulp.task('css', function() {
             cascade: false
         }))
     .pipe(minifyCSS())
-    .pipe(rename('bundle.min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('css/'))
     .pipe(connect.reload());
 });
@@ -54,7 +54,7 @@ gulp.task('connect', function() {
 
 // watch
 gulp.task('watch', function() {
-	gulp.watch('scss/*.scss', ['css', 'rev'])
+	gulp.watch('scss/**/*.scss', ['css', 'rev'])
 	gulp.watch('index.html', ['html'])
 });
 

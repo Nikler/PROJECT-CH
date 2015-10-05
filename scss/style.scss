@@ -1,9 +1,27 @@
+// Google fonts
+
+
+
 // Base
 
-@import reset;
-@import vars;
-@import fonts;
-@import mixins;
-@import main;
+@import 'reset';
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+@import 'main';
 
 // Components
+
+//header
+@import 'components/header';
+@import 'components/header-top';
+@import 'components/header-content';
+@import 'components/header-bottom';
+
+//services
+@import 'components/services';
+@import 'components/serv-list';
+
+@import 'components/but';
+@import 'components/social';
+@import 'components/nav';

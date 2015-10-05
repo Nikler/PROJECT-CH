@@ -1,0 +1,19 @@
+.nav {
+	@include header-nav;
+}
+
+.nav__item {
+	float: left;
+
+}
+
+.nav__link {
+	padding: 0 18px;
+}
+.nav__item:last-child .nav__link {
+	padding-right: 0px;
+}
+
+.nav__link--active {
+	color: $green;
+}
