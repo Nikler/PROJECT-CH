@@ -7,6 +7,7 @@
 		background: #141414;
 		@include clearfix;
 		position: relative;
+		border-radius: 2px;
 	}
 }
 
@@ -18,6 +19,10 @@
 	color: #1b261b;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px; 
+
+	&:hover {
+		background: linear-gradient($green, darken($green, 20%));
+	}
 }
 
 .footer__up {
@@ -26,6 +31,12 @@
 	position: absolute;
 	top: 52px;
 	right: 165px;
+	transition: all .2s;
+
+	&:hover {
+		color: $green;
+		transform: scale(1.1);
+	}
 }
 
 .footer__logo {

@@ -1,4 +1,9 @@
 .social__item {
 		color: #fff;
 		font-size: 18px;
+		transition: color .3s;
+
+		&:hover{
+			color: $green;
+		}
 }

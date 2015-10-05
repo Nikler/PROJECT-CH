@@ -9,7 +9,7 @@
 }
 
 .features__list {
-	margin-top: 140px;
+	margin-top: 80px;
 	font-size: 0px;
 	
 }
@@ -20,19 +20,38 @@
 	text-align: center;
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
-	padding: 230px 60px 0;
+	padding: 290px 60px 60px;
 	line-height: 24px;
 	color: #6b6969;
+	border-radius: 3px;
+	transition: background-color  .2s;
+
+	
 }
 
 .features__item:nth-of-type(1) {
-	background: url('../img/icon__phone.png') no-repeat top center;
+	background: #000 url('../img/icon__phone.png') no-repeat top center;
+	background-position: 50% 60px;
+
+	&:hover {
+		background-color: lighten(#000, 2.7%);
+	}
 }
 
 .features__item:nth-of-type(2) {
-	background: url('../img/icon__fast.png') no-repeat top center;
+	background: #000 url('../img/icon__fast.png') no-repeat top center;
+	background-position: 50% 60px;
+
+	&:hover {
+		background-color: lighten(#000, 2.7%);
+	}
 }
 
 .features__item:nth-of-type(3) {
-	background: url('../img/icon__cooperation.png') no-repeat center 35px;
+	background: #000 url('../img/icon__cooperation.png') no-repeat center 35px;
+	background-position: 50% 90px;
+
+	&:hover {
+		background-color: lighten(#000, 2.7%);
+	}
 }

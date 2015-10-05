@@ -1,9 +1,13 @@
 .but {
 	display: inline-block;
 	padding: 12px 32px 12px 45px;
-	background: $green;
+	background-color: $green;
 	border-radius: 3px;
 	color: #1b261b;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px; 
+
+	&:hover {
+		background: linear-gradient($green, darken($green, 20%));
+	}
 }

@@ -9,6 +9,12 @@
 
 .nav__link {
 	padding: 0 18px;
+	color: #fff;
+	font-size: 12px;
+
+	&:active {
+		color: #000;
+	}
 }
 .nav__item:last-child .nav__link {
 	padding-right: 0px;
@@ -16,4 +22,8 @@
 
 .nav__link--active {
 	color: $green;
+
+	&:hover {
+		color: $green;
+	}
 }

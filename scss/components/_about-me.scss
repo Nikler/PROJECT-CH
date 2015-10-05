@@ -3,6 +3,12 @@
 	background: #141414;
 	padding: 40px 44px;
 	height: 440px;
+	transition: all .4s;
+	border-radius: 2px;
+
+	&:hover {
+		background-color: lighten(#141414, 2%); 
+	}
 }
 
 .about-me__name {
@@ -26,6 +32,10 @@
 
 	i {
 		color: #7d7d7d;
+
+		&:hover {
+			color: #fff;
+		}
 	} 
 }
 
