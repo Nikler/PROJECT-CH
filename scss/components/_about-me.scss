@@ -1,0 +1,45 @@
+.about-me {
+	width: 580px;
+	background: #141414;
+	padding: 40px 44px;
+	height: 440px;
+}
+
+.about-me__name {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	float: left;
+}
+
+.about-me__spec {
+	font-size: 15px;
+	line-height: 36px;
+	color: $green;
+	font-family: 'Roboto', sans-serif;
+	clear: left;
+}
+
+.about-me__social {
+	float: right;
+	line-height: 30px;
+
+	i {
+		color: #7d7d7d;
+	} 
+}
+
+.about-me__text {
+	padding: 20px 0;
+	font-size: 15px;
+	line-height: 24px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.about-me--1 {
+	float: left;
+}
+
+.about-me--2 {
+	float: right;
+}
