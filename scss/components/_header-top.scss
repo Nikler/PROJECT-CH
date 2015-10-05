@@ -2,12 +2,30 @@
 	min-height: 65px;
 	background: rgba(0,0,0,.2);
 	@include clearfix;
+	overflow-x: hidden;
 }
 .header-top__social {
 	float: left;
 	line-height: 65px;
+	transition: all .3s ease-out .6s;
+	transform: translateX(-100px);
+	opacity: 0;
 }
+
+.header-top__social--visible {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
 .header-top__nav {
 	float: right;
 	line-height: 65px;
+	opacity: 0;
+	transition: all .3s ease-out .6s;
+	transform: translateX(100px);
+}
+
+.header-top__nav--visible {
+	transform: translateX(0px);
+	opacity: 1;
 }

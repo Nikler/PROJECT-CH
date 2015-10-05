@@ -2,6 +2,7 @@
 	min-height: 65px;
 	background: rgba(0,0,0,.2);
 	@include clearfix;
+	overflow-x:  hidden;
 }
 
 .header-bottom__location {
@@ -11,10 +12,18 @@
 	@include header-nav;
 	font-size: 12px;
 	font-weight: 500;
+	opacity: 0;
+	transition: all .3s ease-out .6s;
+	transform: translateX(-100px);
 
 	& i {
 		color: $green;
 	}
+}
+
+.header-bottom__location--visible {
+	opacity: 1;
+	transform: translateX(0px);
 }
 
 .header-bottom__dont {
@@ -25,4 +34,12 @@
 	font-size: 12px;
 	font-weight: 500;
 	color: $green;
+	opacity: 0;
+	transition: all .3s ease-out .6s;
+	transform: translateX(100px);
+}
+
+.header-bottom__dont--visible {
+	opacity: 1;
+	transform: translateX(0px);
 }
