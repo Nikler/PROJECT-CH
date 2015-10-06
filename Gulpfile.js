@@ -43,7 +43,7 @@ gulp.task('compress', function() {
 gulp.task('html', function() {
 	gulp.src('index.html')
 	.pipe(connect.reload());
-})
+});
 
 // Чистим кэш (добавляем хэш-сумму к css файлу ,указанному в index.html)
 gulp.task('rev', function() {
