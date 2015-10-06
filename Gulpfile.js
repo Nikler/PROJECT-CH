@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean'),
+    imagemin = require('gulp-imagemin'),
 	connect = require('gulp-connect');
 
 // css
@@ -29,6 +30,13 @@ gulp.task('css', function() {
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('css/'))
     .pipe(connect.reload());
+});
+
+// image optimizated
+gulp.task('compress', function() {
+  gulp.src('img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('img'))
 });
 
 // html
