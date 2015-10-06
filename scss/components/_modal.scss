@@ -1,0 +1,51 @@
+.modal__window {
+	width: 400px;
+	padding: 30px;
+	background-color: #141414;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -200px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 24px;
+	text-transform: uppercase;
+	transform: scale(0);
+	transition: all ease-out .3s;
+}
+
+.modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: -1;
+	transition: all 0s ease-out .27s;
+}
+
+.modal__close {
+	@extend .footer__but;
+	padding: 5px 0px;
+	text-align: center;
+	width: 150px;
+	position: relative;
+	left: 50%;
+	margin-left: -75px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.modal-visible {
+	opacity: 1;
+	z-index: 1;
+	transition: all 0s ease-out 0s;
+}
+
+.modal-visible {
+	.modal__window {
+		transform: scale(1);
+	}
+}

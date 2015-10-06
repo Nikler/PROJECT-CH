@@ -105,3 +105,16 @@ $(document).ready(function(){
 	});
 });
 
+var linkModal = document.querySelector('.link--modal');
+var modal = document.querySelector('.modal');
+var close = document.querySelector('.modal__close');
+
+linkModal.addEventListener('click', function(event) {
+	event.preventDefault();
+	modal.classList.add('modal-visible');
+	close.addEventListener('click', function(event) {
+		event.preventDefault();
+		modal.classList.remove('modal-visible');
+	})
+}); 
+
