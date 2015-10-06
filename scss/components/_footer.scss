@@ -25,6 +25,7 @@
 	}
 }
 
+
 .footer__up {
 	font-size: 58px;
 	color: #6d6b6b;
@@ -61,3 +62,16 @@
 	float: right;
 	margin-top: 10px;
 }
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%,30%,50%,70%,90% {transform: translateX(-5px);}
+	20%,40%,60%,80% {transform: translateX(5px);}
+}
+
+.footer__but--color {
+	animation: shake .6s;
+}
+
+
+

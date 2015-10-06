@@ -1,5 +1,6 @@
 .working {
 	height: 675px;
+	overflow-x: hidden; 
 
 	label {
 		width: 17px;
@@ -60,6 +61,8 @@
 	}
 }
 
+
+
 #working__slide1:checked ~ .working__control label:nth-of-type(1),
 #working__slide2:checked ~ .working__control label:nth-of-type(2),
 #working__slide3:checked ~ .working__control label:nth-of-type(3),
@@ -99,6 +102,14 @@
 	background: url('../img/diagramm.png') no-repeat 50% 50%;
 	background-size: contain;
 	position: relative;
+	opacity: 0;
+	transform: scale(.8);
+	transition: all ease-out .6s;
+}
+
+.working__bg--visible {
+	opacity: 1;
+	transform: scale(1);
 }
 
 .working__title {

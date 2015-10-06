@@ -29,27 +29,46 @@
 	
 }
 
-.features__item:nth-of-type(1) {
+.features__item--1 {
 	background: #000 url('../img/icon__phone.png') no-repeat top center;
 	background-position: 50% 60px;
+	opacity: 0;
+	transform: translateY(-100px) scale(.6);
+	transition: all .35s ease-out;
+
 
 	&:hover {
 		background-color: lighten(#000, 2.7%);
 	}
 }
 
-.features__item:nth-of-type(2) {
+.features__list .features__item--visible {
+	opacity: 1;
+	transform: translateY(0px) scale(1);
+	&:hover {
+		background-color: lighten(#000, 2.7%);
+	}
+}
+
+.features__item--2 {
 	background: #000 url('../img/icon__fast.png') no-repeat top center;
 	background-position: 50% 60px;
+	opacity: 0;
+	transform: translateY(-100px) scale(.6);
+	transition: all .35s ease-out .35s;
 
 	&:hover {
 		background-color: lighten(#000, 2.7%);
+		transition: background-color .5s ease-out;
 	}
 }
 
-.features__item:nth-of-type(3) {
-	background: #000 url('../img/icon__cooperation.png') no-repeat center 35px;
+.features__item--3 {
+	background: url('../img/icon__cooperation.png') no-repeat center 35px;
 	background-position: 50% 90px;
+	opacity: 0;
+	transform: translateY(-100px) scale(.6);
+	transition: all .35s ease-out .7s;
 
 	&:hover {
 		background-color: lighten(#000, 2.7%);
