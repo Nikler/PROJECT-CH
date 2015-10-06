@@ -23,21 +23,17 @@ $(document).ready(function(){
 	$(".header-bottom").addClass('header-bottom--visible');
 	
 	$(window).scroll(function(){
-		if ( ($(this).scrollTop()+h) >= ($("#services").offset().top)+400) {
+		if ( ($(this).scrollTop()+h) >= ($("#services").offset().top+400) && ($(this).scrollTop()+h) <= ($("#services").offset().top+1099) )  {
 			$(".serv-list__item--1").addClass('serv-list__item--1--visible');
 			$(".serv-list__item--2").addClass('serv-list__item--2--visible');
 			$(".serv-list__item--3").addClass('serv-list__item--3--visible');
 		} 
-		if ( ($(this).scrollTop()+h) < ($("#services").offset().top)+400) {
+		else {
 			$(".serv-list__item--1").removeClass('serv-list__item--1--visible');
 			$(".serv-list__item--2").removeClass('serv-list__item--2--visible');
 			$(".serv-list__item--3").removeClass('serv-list__item--3--visible');
 		}
-		if ( ($(this).scrollTop()+h) >= ($("#services").offset().top)+1000) {
-			$(".serv-list__item--1").removeClass('serv-list__item--1--visible');
-			$(".serv-list__item--2").removeClass('serv-list__item--2--visible');
-			$(".serv-list__item--3").removeClass('serv-list__item--3--visible');
-		}  
+		
 		// if ( ($(this).scrollTop()+h) >= $("#ex3").offset().top) {
 		// 	$("#ex3 .post").css({visibility:"visible"});
 		// 	$("#ex3 .post").eq(0).addClass('animated bounceInLeft');
