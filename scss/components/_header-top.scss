@@ -1,13 +1,19 @@
 .header-top {
 	min-height: 65px;
-	background: rgba(0,0,0,.2);
+	background: rgba(0,0,0,1);
 	@include clearfix;
 	overflow-x: hidden;
+	transition: all .6s ease-out .6s;
 }
+
+.header-top--visible {
+	background: rgba(0,0,0,.2);
+}
+
 .header-top__social {
 	float: left;
 	line-height: 65px;
-	transition: all .3s ease-out .6s;
+	transition: all .3s ease-out 1.2s;
 	transform: translateX(-100px);
 	opacity: 0;
 }
@@ -21,7 +27,7 @@
 	float: right;
 	line-height: 65px;
 	opacity: 0;
-	transition: all .3s ease-out .6s;
+	transition: all .3s ease-out 1.2s;
 	transform: translateX(100px);
 }
 

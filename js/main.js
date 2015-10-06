@@ -10,8 +10,17 @@ $(document).ready(function(){
 	$(".header-top__nav").addClass('header-top__nav--visible');
 	$(".header-top__social").addClass('header-top__social--visible');
 
-		$(".header-bottom__location").addClass('header-bottom__location--visible');
+	$(".header-bottom__location").addClass('header-bottom__location--visible');
 	$(".header-bottom__dont").addClass('header-bottom__dont--visible');
+
+	function load () {
+		$(".loading").addClass('loading--stop');
+	}
+
+	setTimeout(load, 600);
+
+	$(".header-top").addClass('header-top--visible');
+	$(".header-bottom").addClass('header-bottom--visible');
 	
 	// $(window).scroll(function(){
 	// 	if ( ($(this).scrollTop()+h) >= $("#ex2").offset().top) {
