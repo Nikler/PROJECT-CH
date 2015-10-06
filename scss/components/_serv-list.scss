@@ -11,12 +11,9 @@
 	background: url('../img/landing-page__bg.jpg') no-repeat;
 	background-size: cover;
 	float: left;
-	opacity: 1;
-	transition: all .5s;
-
-	&:hover {
-		opacity: 0.8;
-	}
+	opacity: 0;
+	transform: scale(.75) translateX(-100px);
+	transition: all ease-out .5s;
 
 	& .serv-list__item-wrap {
 		font-size: 50px;
@@ -28,6 +25,11 @@
 	}
 }
 
+.serv-list__item--1--visible {
+	opacity: 1;
+	transform: scale(1) ;
+}
+
 .serv-list__item--2 {
 	display: block;
 	height: 187px;
@@ -36,11 +38,10 @@
 	background-size: cover;
 	float: right;
 	clear: right;
-	transition: all .5s;
+	opacity: 0;
+	transform: scale(.75) translateX(100px);
+	transition: all ease-out .5s;
 
-	&:hover {
-		opacity: 0.8;
-	}
 	
 	& .serv-list__item-wrap {
 		text-align: right;
@@ -56,6 +57,11 @@
 	}
 }
 
+.serv-list__item--2--visible {
+	opacity: 1;
+	transform: scale(1) ;
+}
+
 .serv-list__item--3 {
 	display: block;
 	height: 178px;
@@ -64,11 +70,9 @@
 	background-size: cover;
 	float: right;
 	margin-top: (375px - (187px + 178px));
-	transition: all .5s;
-
-	&:hover {
-		opacity: 0.8;
-	}
+	opacity: 0;
+	transform: scale(.75) translateX(100px);
+	transition: all ease-out .5s;
 
 	& .serv-list__item-wrap {
 		text-align: right;
@@ -76,4 +80,9 @@
 		font-family: 'Roboto', sans-serif;
 		margin: 120px 28px 0 0;
 	}
+}
+
+.serv-list__item--3--visible {
+	opacity: 1;
+	transform: scale(1) ;
 }
