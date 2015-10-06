@@ -34,20 +34,12 @@
 	background-position: 50% 60px;
 	opacity: 0;
 	transform: translateY(-100px) scale(.6);
-	transition: all .35s ease-out;
-
-
-	&:hover {
-		background-color: lighten(#000, 2.7%);
-	}
+	transition: all .3s ease-out;
 }
 
 .features__list .features__item--visible {
 	opacity: 1;
 	transform: translateY(0px) scale(1);
-	&:hover {
-		background-color: lighten(#000, 2.7%);
-	}
 }
 
 .features__item--2 {
@@ -55,12 +47,8 @@
 	background-position: 50% 60px;
 	opacity: 0;
 	transform: translateY(-100px) scale(.6);
-	transition: all .35s ease-out .35s;
+	transition: all .3s ease-out .3s;
 
-	&:hover {
-		background-color: lighten(#000, 2.7%);
-		transition: background-color .5s ease-out;
-	}
 }
 
 .features__item--3 {
@@ -68,9 +56,6 @@
 	background-position: 50% 90px;
 	opacity: 0;
 	transform: translateY(-100px) scale(.6);
-	transition: all .35s ease-out .7s;
+	transition: all .3s ease-out .6s;
 
-	&:hover {
-		background-color: lighten(#000, 2.7%);
-	}
 }

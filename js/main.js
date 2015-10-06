@@ -64,7 +64,13 @@ $(document).ready(function(){
 		} 
 		else {
 			$(".footer__but").removeClass('footer__but--color');
-		}			
+		}
+
+		$("a").click(function(){
+		var selected = $(this).attr('href');	
+		$.scrollTo(selected, 500);		
+		return false;
+		});
 		// if ( ($(this).scrollTop()+h) >= $("#ex3").offset().top) {
 		// 	$("#ex3 .post").css({visibility:"visible"});
 		// 	$("#ex3 .post").eq(0).addClass('animated bounceInLeft');
