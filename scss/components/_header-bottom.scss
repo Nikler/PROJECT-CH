@@ -15,7 +15,7 @@
 	display: inline;
 	line-height: 65px;
 	@include header-nav;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
 	opacity: 0;
 	transition: all .3s ease-out 1.2s;
@@ -37,7 +37,7 @@
 	display: inline;
 	line-height: 65px;
 	@include header-nav;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
 	color: $green;
 	opacity: 0;

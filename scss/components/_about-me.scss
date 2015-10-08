@@ -10,6 +10,9 @@
 
 	&:hover {
 		background-color: lighten(#141414, 3%); 
+	}
+
+	&:hover .about-me__text {
 		color: #fff;
 	}
 }
@@ -50,11 +53,11 @@
 
 .about-me__text {
 	padding: 40px 0;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 19px;
+	line-height: 27px;
 	font-family: 'PT Sans Narrow', sans-serif;
 	text-transform: none;
-	color: darken(#fff, 10%);
+	color: #D8D5D5;
 	font-weight: 400;
 }
 
