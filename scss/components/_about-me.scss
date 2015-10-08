@@ -3,13 +3,14 @@
 	background: #141414;
 	padding: 40px 44px;
 	height: 440px;
-	border-radius: 2px;
+	border-radius: 4px;
 	opacity: 0;
 	transform: scale(.9);
 	transition: all ease-out .5s;
 
 	&:hover {
 		background-color: lighten(#141414, 3%); 
+		color: #fff;
 	}
 }
 
@@ -19,17 +20,18 @@
 }
 
 .about-me__name {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 30px;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 32px;
 	color: #fff;
 	float: left;
+	font-weight: 700;
 }
 
 .about-me__spec {
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 36px;
 	color: $green;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Cuprum', sans-serif;
 	clear: left;
 }
 
@@ -47,10 +49,13 @@
 }
 
 .about-me__text {
-	padding: 20px 0;
-	font-size: 15px;
+	padding: 35px 0;
+	font-size: 16px;
 	line-height: 24px;
 	font-family: 'Roboto', sans-serif;
+	text-transform: none;
+	color: darken(#fff, 10%);
+	font-weight: 400;
 }
 
 .about-me--1 {

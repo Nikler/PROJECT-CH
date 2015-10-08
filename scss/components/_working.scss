@@ -116,7 +116,7 @@
 	font-size: 60px;
 	margin-top: 60px;
 	margin-bottom: 20px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Cuprum', sans-serif;
 }
 
 .working__slide {
@@ -128,7 +128,7 @@
 	height: 200px;
 	padding: 15px 15px;
 	background: #141414;
-	border-radius: 2px;
+	border-radius: 4px;
 	transform: rotateX(180deg);
 
 	&:hover {
@@ -138,23 +138,25 @@
 }
 
 .working__slide-title {
-	font-size: 30px;
-	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: 700;
 }
 
 .working__slide-desc {
-	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-family: 'Cuprum', sans-serif;
 	line-height: 30px;
 	color: $green;
 }
 
 .working__slide-item {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 24px;
 	list-style: disc;
 	margin-left: 45px;
+	color: darken(#fff, 10%);
 ;
 }
 

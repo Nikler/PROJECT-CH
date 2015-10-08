@@ -4,6 +4,7 @@
 	@include clearfix;
 	overflow-x: hidden;
 	transition: all .6s ease-out .6s;
+	font-family: 'Cuprum', sans-serif;
 }
 
 .header-top--visible {
@@ -24,6 +25,7 @@
 }
 
 .header-top__nav {
+
 	float: right;
 	line-height: 65px;
 	opacity: 0;

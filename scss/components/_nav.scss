@@ -1,5 +1,7 @@
 .nav {
 	@include header-nav;
+		font-family: 'Cuprum', sans-serif;
+		
 }
 
 .nav__item {
@@ -8,9 +10,9 @@
 }
 
 .nav__link {
-	padding: 0 18px;
+	padding: 0 22px;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 
 	&:active {
 		color: #000;
