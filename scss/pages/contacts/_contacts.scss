@@ -1,0 +1,105 @@
+.header-top--contacts {
+	background-color: #0a0a0a;
+	transition: all 0s ease-out 0s;
+	margin-bottom: 70px;
+}
+
+.header-top__social--contacts {
+	transition: all .3s ease-out 0s;
+}
+
+.header-top__nav--contacts {
+	transition: all .3s ease-out 0s;
+}
+
+.contacts-head {
+	float: left;
+	text-align: center;
+}
+
+.contacts-head__title {
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 30px;
+}
+
+.contacts-head__but {
+	@extend .footer__but;
+}
+
+.contacts-blocks {
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.contacts-list {
+	float: left;
+	width: 390px;
+	border-radius: 5px;
+	background-color: #141414;
+	margin-left: 15px;
+	padding: 20px;
+}
+
+.contacts-list__city {
+	text-align: right;
+	font-size: 22px;
+}
+
+.contacts-list__phone {
+	text-align: right;
+	color: $green;
+	margin: 15px 0px;
+}
+
+.contacts-list__name {
+	text-align: right;
+	color: #d3d1d1;
+}
+
+.contacts-list__social {
+	margin-top: 60px;
+}
+
+.contacts-social__item {
+	color: #d3d1d1;
+	line-height: 40px;
+	padding: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.contacts-social__item:hover {
+	background: darken(#141414, 1%);
+}
+
+.contacts-social__item:after {
+	content:"";
+	font-family: 'fontello';
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	right: 5px;
+	line-height: 40px;
+}
+
+.contacts-social__item--skype:after {
+	content:"";
+}
+
+.contacts-social__item--mail:after {
+	content:"";
+}
+
+.contacts-social__item--vk:after {
+	content:"";
+}
+
+.contacts-social__item--facebook:after {
+	content:"";
+}
+
+.contacts-social__item--twitter:after {
+	content:"";
+}

@@ -14,14 +14,14 @@
 
 	position: absolute;
 	top: 300px;
-	font-size: 50px;
+	font-size: 40px;
 	left: 50%;
 	margin-left: -35px;
 	color: $green;
 	z-index: 3;
 
 	animation-name: spin;
-    animation-duration: 2s;
+    animation-duration: .8s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
