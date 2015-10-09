@@ -12,9 +12,6 @@
 		background-color: lighten(#141414, 3%); 
 	}
 
-	&:hover .about-me__text {
-		color: #fff;
-	}
 }
 
 .about-me--visible {
@@ -57,7 +54,7 @@
 	line-height: 27px;
 	font-family: 'PT Sans Narrow', sans-serif;
 	text-transform: none;
-	color: #D8D5D5;
+	color: #fff;
 	font-weight: 400;
 }
 
